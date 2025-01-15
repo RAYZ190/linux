@@ -438,6 +438,10 @@ footer {
         transform: translateY(0);
     }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
@@ -467,10 +471,10 @@ footer {
                 <p>To create a hard link, you would use the following syntax: <code>ln <source> <link_name></code>. This command creates a hard link named <link_name> pointing to the source file <source>. For example, if you have a file named `file1.txt` and you run <code>ln file1.txt file2.txt</code>, it will create a hard link named `file2.txt` that refers to the same data as `file1.txt`.</p>
                 <p>To create a symbolic link, you would use the `-s` option with the `ln` command: <code>ln -s <source> <link_name></code>. For example, running <code>ln -s /path/to/original/file /path/to/symlink</code> will create a symbolic link to the original file at the specified location.</p>
                 	<p>The `ln` command is useful for many scenarios, such as managing large sets of files, creating shortcuts for commonly used files or directories, and maintaining file references across different locations. However, it’s essential to be aware of the differences between hard and symbolic links and to choose the appropriate type of link based on the specific use case. Additionally, symbolic links are more commonly used because they are more flexible and can span file systems, while hard links are typically used in situations where you need to maintain multiple references to the same file data.</p>
-					<img src="ln.jpg.jpeg" alt="linux" />
+					<img src="ln.jpg.jpeg" alt="linux" style="max-width: 100%; height: auto;"/>
 					<p><b><u>Click Here For More</u></b></p> 
                 <div class="nav-bar">
-					<b><u><p>Click Here For More</p></u></b>
+					
 					<a href="df.html">Df</a>
 					<a href="du.html">Du</a>
 					<a href="mount.html">Mount</a>

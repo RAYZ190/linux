@@ -439,6 +439,10 @@ footer {
     color: #fff; /* Changes the text color on hover */
     transform: scale(1.1); /* Slightly enlarges the box on hover */
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
@@ -468,7 +472,7 @@ footer {
                 <p>The `du` command also supports several other options to customize the output. The `-a` flag includes individual file sizes in addition to directories, while the `--max-depth=N` flag limits the depth of directory traversal, allowing you to view the usage of top-level directories without listing all subdirectories. Another useful option is `-c`, which provides a grand total of disk usage for the entire directory tree at the end of the output.</p>
                 <p>It is important to note that the `du` command works by reading file system metadata to calculate disk usage, so it may not always reflect the exact disk space used due to factors like file system overhead, hard links, or sparse files. However, it provides a reliable estimate of disk space usage for most use cases.</p>
                 <p>In summary, the `du` command is a versatile and essential tool for monitoring and managing disk space in Linux. Whether you're cleaning up disk space, auditing disk usage, or troubleshooting storage issues, `du` provides valuable insights into how space is being utilized across the file system, helping users keep their systems running efficiently.</p>
-                <img src="du.png" alt="linux" />
+                <img src="du.png" alt="linux"style="max-width: 100%; height: auto;" />
 				<p><b><u>Click Here For More</u></b></p> 
 				<div class="nav-bar">
 					

@@ -440,7 +440,10 @@ footer {
     transform: scale(1.1); /* Slightly enlarges the box on hover */
 }
 
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
@@ -473,7 +476,7 @@ footer {
                 <p>Once a device is mounted, users can interact with its contents just like any other part of the filesystem. Files can be read, written, or deleted, depending on the permissions set. When done using a mounted device, it is important to unmount it properly using the `umount` command to ensure that all data is safely written and to prevent potential filesystem corruption. The command `umount <mount_point>` or `umount <device>` is used to unmount the device from the system.</p>
                 <p>For advanced use cases, the `mount` command can also mount network filesystems, such as NFS (Network File System) or SMB (Server Message Block) shares, enabling the integration of remote systems into the local filesystem. This capability is especially useful in environments with multiple Linux machines or when accessing network storage devices. Additionally, the `mount` command can handle special filesystems like virtual filesystems (e.g., `/proc`), making it a versatile tool in Linux system administration.</p>
                 <p>In summary, the `mount` command in Linux is an essential tool for managing storage devices and filesystems. Its flexibility and extensive options allow for efficient handling of local and remote filesystems, and understanding how to use `mount` is fundamental for both system administrators and regular users working with Linux-based systems.</p>
-                <img src="mount.png" alt="linux" />
+                <img src="mount.png" alt="linux"style="max-width: 100%; height: auto;" />
 				<p><b><u>Click Here For More</u></b></p> 
 				<div class="nav-bar">
 					
