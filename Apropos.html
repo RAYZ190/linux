@@ -437,6 +437,11 @@ footer {
         transform: translateY(0);
     }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 </style>
 </head>
 <body>
@@ -464,7 +469,8 @@ footer {
                 <p>To use the `apropos` command, simply type `apropos` followed by a keyword. For instance, running `apropos network` will return a list of commands and manual entries related to networking, each accompanied by a brief description. This allows users to quickly identify commands they might need without having to search through extensive documentation manually.</p>
                 <p>Behind the scenes, `apropos` relies on an indexed database of manual page descriptions, typically built using the `makewhatis` or `mandb` commands. This database must be kept up-to-date for `apropos` to function effectively, as outdated or incomplete data may result in missing or incorrect search results. System administrators often schedule regular updates to this database to ensure accuracy.</p>
                 <p>In summary, the `apropos` command is an invaluable tool for navigating the vast array of Linux commands and utilities. Whether you're a beginner looking to explore available features or a seasoned professional searching for a specific tool, `apropos` simplifies the process of finding relevant commands by providing quick, context-driven search results.</p>
-                <img src="apropos.png" alt="linux" />
+                <img src="apropos.png" alt="linux" style="max-width: 100%; height: auto;">
+
 				<p><b><u>Click Here For More</u></b></p> 
 				<div class="nav-bar">
 					
