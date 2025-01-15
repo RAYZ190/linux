@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>R Company</title>
+	<style>
+		
+
+		
+		header.main {
+    background: transparent; /* Make background transparent */
+    color: #ffffff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header.main h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: left;
+    width: auto; /* Adjust to fit the content */
+}
+
+header.main .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header.main nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+    flex-grow: 1; /* Ensure nav spans the available space */
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; /* Auto margins center the nav */
+}
+
+header.main nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #0078f8;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.main nav a:hover {
+    background: #00BFFF;
+    color: #ffffff;
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+header.main .left-section {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    margin-right: auto; /* Push to the left */
+}
+
+header.main .left-section h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+	/* Hero Section */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: url('https://wallpaperswide.com/download/linux-wallpaper-1280x720.jpg') no-repeat center center/cover;
+    color: rgb(20, 117, 134);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background 1s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero:hover {
+    background: url('https://wallpaperbat.com/img/17396069-minimal-manjaro-wallpaper-art.png') no-repeat center center/cover;
+    color: rgb(255, 69, 0);
+    transform: scale(1.01); /* Slight zoom effect */
+}
+
+.hero-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for realism */
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    transform: scale(0.95); /* Slightly smaller initially */
+}
+
+.hero-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: rgb(20, 117, 134);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adding text shadow for depth */
+}
+
+.hero-box p {
+    font-size: 1.2rem;
+    color: rgb(50, 50, 50);
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95); /* Start from below and smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1); /* End at normal size */
+    }
+}
+
+/* Linux Section Styles */
+section.linux-info {
+		background-color: #eef2f3;
+		padding: 40px 20px;
+		text-align: center;
+	}
+
+	section.linux-info .hero-box {
+		background: rgba(255, 255, 255, 0.9);
+		padding: 20px 40px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	section.linux-info h1 {
+		font-size: 2.5rem;
+		color: #005f73;
+		margin-bottom: 15px;
+	}
+
+	section.linux-info p {
+		font-size: 1.2rem;
+		color: #333;
+		line-height: 1.6;
+	}
+
+	/* Linux Introduction Section */
+	.linux-introduction {
+		background-color: #ffffff;
+		margin: 40px auto;
+		padding: 20px;
+		max-width: 900px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	/* Link Styling */
+	.intro-link {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 10px 20px;
+		background-color: #007bff;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 1.2rem;
+		font-weight: 600;
+		transition: background-color 0.3s ease;
+	}
+
+	.intro-link:hover {
+		background-color: #00BFFF;
+	}
+/* Linux Section Styles */
+section.linux-info {
+			background-color: #eef2f3;
+			padding: 40px 20px;
+			text-align: center;
+		}
+
+		section.linux-info .hero-box {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 20px 40px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		section.linux-info h1 {
+			font-size: 2.5rem;
+			color: #005f73;
+			margin-bottom: 15px;
+		}
+
+		section.linux-info p {
+			font-size: 1.2rem;
+			color: #333;
+			line-height: 1.6;
+		}
+	
+	
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://i.redd.it/qnyw6hswdi561.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background scales to cover the viewport */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Linux Introduction Section */
+.linux-introduction {
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styles */
+.linux-introduction h2 {
+    font-size: 32px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.linux-introduction h3 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+
+
+
+		header.contact {
+			padding: 50px 20px;
+			background-color: #ffffff;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		header.contact hr {
+			border: none;
+			height: 2px;
+			background-color: #017bf5;
+			width: 20%;
+			margin: 10px auto;
+		}
+
+		header.contact p {
+			font-size: 2rem;
+			font-weight: bold;
+			color: #017bf5;
+			margin: 20px 0;
+		}
+
+
+	/* Main Section Styling */
+.linux-introduction {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    background-size: cover;
+    padding: 30px;
+    color: rgb(241, 0, 0); /* Red text color */
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Optional: Apply a blur effect to the background */
+}
+
+		
+		/* Paragraph Styling */
+		.linux-introduction p {
+			font-size: 16px;
+			line-height: 1.6;
+			color: #000000;
+			margin-bottom: 20px;
+			text-align: justify;
+			opacity: 0;
+			animation: fadeIn 2s forwards;
+		}
+		
+		/* Transition effect for list items */
+		.linux-introduction ul li {
+			background-color: rgba(233, 236, 239, 0.9);
+			margin: 10px 0;
+			padding: 12px;
+			border-radius: 4px;
+			transition: transform 0.3s ease, background-color 0.3s ease;
+			position: relative;
+		}
+		
+		.linux-introduction ul li:hover {
+			transform: translateY(-5px);
+			background-color: #007bff;
+			color: white;
+		}
+		
+		/* Tooltip (pop-up) */
+		.linux-introduction ul li span {
+			display: none;
+			position: absolute;
+			background-color: #007bff;
+			color: white;
+			border-radius: 5px;
+			padding: 5px;
+			font-size: 14px;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.linux-introduction ul li:hover span {
+			display: block;
+		}
+		
+		/* Add animation to headings */
+		.linux-introduction h2, .linux-introduction h3 {
+			opacity: 0;
+			animation: fadeIn 2s forwards;
+		}
+		
+		/* Apply different animation delays for headings */
+		.linux-introduction h2 {
+			animation-delay: 0.5s;
+		}
+		
+		.linux-introduction h3 {
+			animation-delay: 1s;
+		}
+		
+		/* Animation for fading in */
+		@keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+		
+		/* Popular Distributions Section Styling */
+		.linux-introduction ul li:nth-child(odd) {
+			background-color: #0c1117;
+		}
+		
+		.linux-introduction ul li:nth-child(even) {
+			background-color: #1a4e82;
+		}
+		
+		/* Responsive Design */
+		@media screen and (max-width: 768px) {
+			.linux-introduction {
+				margin: 20px;
+				padding: 15px;
+			}
+		
+			.linux-introduction h2 {
+				font-size: 30px;
+			}
+		
+			.linux-introduction h3 {
+				font-size: 30px;
+			}
+		
+			.linux-introduction p, .linux-introduction ul {
+				font-size: 20px;
+			}
+		}
+		.linux-container {
+    display: flex; /* Align the image and paragraph horizontally */
+    align-items: center; /* Vertically center-align the items */
+    gap: 20px; /* Adds some space between the image and the paragraph */
+}
+
+.linux {
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Creates a circular shape */
+    border: 2px solid #fff; /* Adds a border around the image */
+}
+
+.linux-container p {
+    font-size: 1em; /* Adjust font size */
+    color: #fff; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+    flex-grow: 1; /* Ensure nav spans the available space */
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; /* Auto margins center the nav */
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #0078f8;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar a:hover {
+    background-color: #007BFF; /* Changes the background color on hover */
+    color: #fff; /* Changes the text color on hover */
+    transform: scale(1.1); /* Slightly enlarges the box on hover */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent background for footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    backdrop-filter: blur(5px); /* Apply blur effect to the footer */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for a 3D boxed effect */
+    max-width: 90%; /* Ensure the footer doesn't stretch too wide */
+    margin-left: auto;
+    margin-right: auto; /* Center the footer */
+}
+
+
+/* Animation for the Contact Form */
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+	<header class="main">
+		
+		
+		<nav>
+			
+			<a href="Apropos.html">Apropos</a>
+			<a href="info.html">Info</a>
+			<a href="alias.html">Alias</a>
+			<a href="uname.html">Uname</a>
+		</nav>
+	
+	</header>
+
+	<section class="hero">
+		<div class="hero-box">
+			<h1>Welcome to the World of Linux!</h1>
+			<p>Step into the world of Linux</p>
+			<a href="#linux-introduction" class="intro-link">start with Introduction</a>
+		</div>
+	</section>
+	
+
+	
+	<div>
+	<section class="linux-introduction" id="linux-introduction">
+		<h2>Introduction to Linux</h2>
+		<div class="intro-content">
+			
+			<p>Linux is a powerful, open-source operating system kernel that serves as the core for a wide variety of operating systems (known as distributions or distros) that are freely available to the public. Originally created by Linus Torvalds in 1991, it has grown to become the backbone of numerous systems worldwide. From personal computers and laptops to smartphones and servers, Linux powers a broad spectrum of devices and systems. Unlike proprietary operating systems, Linux is developed collaboratively by a vast community of developers worldwide, making it not only free but also constantly evolving. Its open-source nature means that users can modify the source code and redistribute it, which fosters innovation and experimentation within the tech community.
+		</div></p>
+			<p>One of the key reasons Linux stands out is its stability and security. It is widely known for being less susceptible to viruses and malware compared to other operating systems, largely due to its strict user permissions and frequent updates. Its versatility is another significant factor—users can choose from various distributions (distros) such as Ubuntu, Fedora, and Debian, each designed with specific user needs in mind, from beginners to advanced professionals. Additionally, Linux is highly customizable, allowing users to tailor everything from the user interface to system settings to their exact requirements.</p>
+			<p>Linux's ability to run on a wide range of hardware, including older computers and specialized embedded devices, further adds to its appeal. It has become the operating system of choice for servers and large-scale enterprise systems, particularly due to its reliability and performance under heavy loads. Furthermore, Linux plays a critical role in the development of software and is widely used by developers, system administrators, and tech enthusiasts for programming, testing, and deployment environments.</p>
+
+			
+			<p>Whether you're looking to explore the world of open-source software, build your own system from the ground up, or simply want a secure and customizable operating system, Linux provides a flexible and robust solution that continues to grow in popularity worldwide.</p>
+			
+				<p><b><u>Click Here For More</u></b></p> 
+			
+			<div class="nav-bar">
+				<a href="df.html">Df</a>
+				<a href="du.html">Du</a>
+				<a href="mount.html">Mount</a>
+				<a href="ln.html">Ln</a>
+				<a href="man.html">Man</a>
+			</div>	
+		</div>
+	</section>
+	
+	
+	
+	<html>
+		<body>
+	<footer>
+	<center>	<p>&copy; 2025 R Company. All rights reserved. | Designed for innovation and excellence.</p></center>
+	</footer>
+</body>
+</html>
